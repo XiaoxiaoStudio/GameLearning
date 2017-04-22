@@ -2,13 +2,22 @@
 # 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
 ################################################################################
 
-/honeyBiollows/StateMachine/StateTest/Temp
-/honeyBiollows/StateMachine/StateTest/StateTest.sln
-/honeyBiollows/StateMachine/StateTest/Assembly-CSharp.csproj
-/honeyBiollows/StateMachine/StateTest/Library
-/honeyBiollows/StateMachine/StateTest/obj/Debug
-/honeyBiollows/StateMachine/StateTest/ProjectSettings
-/honeyBiollows/StateMachine/StateTest/.vs/StateTest/v14
+/wellshsu/StateMachine/.vs/StateMachine/v14
+/wellshsu/StateMachine/Library
+/wellshsu/StateMachine/Temp
+/wellshsu/StateMachine/StateMachine.sln
+/wellshsu/StateMachine/StateMachine.CSharp.csproj
+/ZHV587/StateMachine/.vs/ZHV587/v14
+/ZHV587/StateMachine/Library
+/ZHV587/StateMachine/Temp
+/ZHV587/StateMachine/StateMachine.csproj
+/ZHV587/StateMachine/StateMachine.sln
+/DoubleBo/GameStateMachine/Temp
+/DoubleBo/GameStateMachine/obj/Debug
+/DoubleBo/GameStateMachine/Library
+/DoubleBo/GameStateMachine/Assembly-CSharp.csproj
+/DoubleBo/GameStateMachine/GameStateMachine.CSharp.csproj
+/DoubleBo/GameStateMachine/.vs/GameStateMachine/v14
 /honeyBiollows/StateMachine/Temp
 /honeyBiollows/StateMachine/StateTest.sln
 /honeyBiollows/StateMachine/StateMachine.sln
@@ -17,3 +26,15 @@
 /honeyBiollows/StateMachine/Library
 /honeyBiollows/StateMachine/obj/Debug
 /honeyBiollows/StateMachine/.vs/StateMachine/v14
+/EventSystem/.vs/EventSystem/v14
+/EventSystem/Library
+/EventSystem/obj/Debug
+/EventSystem/Temp
+/EventSystem/EventSystem.sln
+/EventSystem/Assembly-CSharp.csproj
+/honeyBiollows/EventSystem/.vs/EventSystem/v14
+/honeyBiollows/EventSystem/Assembly-CSharp.csproj
+/honeyBiollows/EventSystem/EventSystem.sln
+/honeyBiollows/EventSystem/Temp
+/honeyBiollows/EventSystem/obj/Debug
+/honeyBiollows/EventSystem/Library
