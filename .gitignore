@@ -1,0 +1,9 @@
+﻿################################################################################
+# 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
+################################################################################
+
+/wellshsu/StateMachine/.vs/StateMachine/v14
+/wellshsu/StateMachine/Library
+/wellshsu/StateMachine/Temp
+/wellshsu/StateMachine/StateMachine.sln
+/wellshsu/StateMachine/StateMachine.CSharp.csproj
