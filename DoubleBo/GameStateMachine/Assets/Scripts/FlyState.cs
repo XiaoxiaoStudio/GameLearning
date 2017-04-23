@@ -6,28 +6,31 @@ public class FlyState : IState
 {
     StateMachine m_StateMachine;
 
-    public FlyState(StateEnum m_State) : base(m_State)
+    public FlyState(string name) : base(name)
     {
     }
-
-    public override int GetStateID()
+    /// <summary>
+    /// 返回值为状态名
+    /// </summary>
+    /// <returns></returns>
+    public override string GetStateName()
     {
-        return (int)StateEnum.Fly;
+        return StateEnum.Fly.ToString();
     }
 
-    public override void StartState(StateMachine stateMachine)
+    public override void Start(StateMachine stateMachine)
     {
         m_StateMachine = stateMachine;
-        Debug.Log("已经入飞行状态,上次的状态为：" + m_StateMachine.LastState);
+        Debug.Log(GetStateName() + "Start，framecount is" + Time.frameCount);
     }
 
-    public override void UpdateState()
+    public override void Update()
     {
-        //Debug.Log("现在是等待状态");
+        Debug.Log(GetStateName() + "Update，framecount is" +Time.frameCount);
     }
 
-    public override void EndState()
+    public override void End()
     {
-        Debug.Log("退出飞行状态,下个状态为：" + m_StateMachine.NextState);
+        Debug.Log(GetStateName() + "End，framecount is" + Time.frameCount);
     }
 }

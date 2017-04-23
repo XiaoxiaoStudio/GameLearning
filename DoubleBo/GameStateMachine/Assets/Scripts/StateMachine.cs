@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class StateMachine
 {
-    private Dictionary<int, IState> m_StateDict;
+    public Dictionary<string, IState> StateDict;
 
     public IState CurState;
 
@@ -14,98 +14,108 @@ public class StateMachine
 
     public StateMachine()
     {
-        m_StateDict = new Dictionary<int, IState>();
+        StateDict = new Dictionary<string, IState>();
     }
 
     /// <summary>
     /// 注册状态
     /// </summary>
     /// <param name="state"></param>
-    public void RegistState(IState state)
+    public bool RegistState(IState state)
     {
-        if (!m_StateDict.ContainsKey((int)state.m_StateEnum))
+        if (state == null)// || string.IsNullOrEmpty(state.m_StateEnum.ToString())
         {
-            m_StateDict.Add((int)state.m_StateEnum, state);
+            return false;
         }
+
+        if (StateDict == null)
+        {
+            StateDict = new Dictionary<string, IState>();
+        }
+
+        if (!StateDict.ContainsKey(state.m_StateEnum.ToString()))
+        {
+            StateDict.Add(state.m_StateEnum.ToString(), state);
+            return true;
+        }
+        return false;
     }
 
     /// <summary>
-    /// 获取这个状态
+    /// 解除状态的注册
     /// </summary>
-    /// <param name="stateId"></param>
-    /// <returns></returns>
-    public IState GetState(int stateId)
+    /// <param name="stateName"></param>
+    public void RemoveState(string stateName)
     {
-        IState state = null;
-        m_StateDict.TryGetValue(stateId, out state);
-        return state;
+        if (!StateDict.ContainsKey(stateName))
+        {
+            return;
+        }
+        StateDict.Remove(stateName);
     }
-    
+
+    public void Refash()
+    {
+        Debug.Log("qqqqq");
+    }
+
     /// <summary>
     /// 切换这个状态
     /// </summary>
     /// <param name="newStateId"></param>
     /// <returns></returns>
-    public bool SwitchState(int newStateId)
+    public void SwitchState(string newStateName)
     {
-        if (!m_StateDict.ContainsKey(newStateId))
-        {
-            return false;
-        }
+        IState state = GetStateByName(newStateName);
 
+        //判断该状态是否注册
+        if (!StateDict.ContainsKey(newStateName))
+        {
+            return;
+        }
         //是否要切换的是现有状态
-        if (CurState.GetStateID() == newStateId)
+        if (CurState != null)
         {
-            return false;
+            if (CurState.GetStateName() == newStateName)
+            {
+                Refash();
+                return;
+            }
         }
-
-        IState m_NewState = null;
-        m_StateDict.TryGetValue(newStateId, out m_NewState);
-        //if (null == m_NewState)
-        //{
-        //    return false;
-        //}
-
-        //IState m_OldState = CurState;
-
-        //if (m_OldState != null)
-        //{
-        //    m_OldState.EndState();
-        //}
-        //LastState = m_OldState;
-        NextState = m_NewState;
-        return true;
+        
+        NextState = state;
     }
 
     /// <summary>
-    /// 获取现有状态
+    /// 获取状态
     /// </summary>
     /// <returns></returns>
-    public IState GetCurState()
+    public IState GetStateByName(string stateName)
     {
-        return CurState;
+        IState tempState = null;
+        if (StateDict.ContainsKey(stateName))
+        {
+            StateDict.TryGetValue(stateName, out tempState);
+        }
+        return tempState;
     }
-
-    ///// <summary>
-    ///// 获取现有状态ID
-    ///// </summary>
-    ///// <returns></returns>
-    //public int GetCurStateId()
-    //{
-    //    IState state = GetCurState();
-    //    return (null == state) ? 0 : state.GetStateID();
-    //}
-
+    
     public void OnUpdate()
     {
         if(NextState!=null)
         {
+            if (CurState != null)
+            {
+                CurState.End();
+            }
+            NextState.Start(this);
             CurState = NextState;
             NextState = null;
         }
         if (CurState != null)
         {
-            CurState.UpdateState();
+            CurState.Update();
         }
     }
+
 }
