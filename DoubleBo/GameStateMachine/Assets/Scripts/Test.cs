@@ -10,24 +10,23 @@ public class Test : MonoBehaviour {
     void Start () {
         m_StateMachine = new StateMachine();
 
-        m_StateMachine.RegistState(new FlyState(StateEnum.Fly));
-        m_StateMachine.RegistState(new WaitState(StateEnum.Wait));
+        m_StateMachine.RegistState(new FlyState(StateEnum.Fly.ToString()));
+        m_StateMachine.RegistState(new WaitState(StateEnum.Wait.ToString()));
 
-        m_StateMachine.SwitchState((int)StateEnum.Wait);
+        m_StateMachine.SwitchState(StateEnum.Wait.ToString());
 }
 	
 	// Update is called once per frame
 	void Update () {
-
         m_StateMachine.OnUpdate();
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            m_StateMachine.SwitchState((int)StateEnum.Fly);
+            m_StateMachine.SwitchState(StateEnum.Fly.ToString());
         }
         if (Input.GetKeyDown(KeyCode.W))
         {
-            m_StateMachine.SwitchState((int)StateEnum.Wait);
+            m_StateMachine.SwitchState(StateEnum.Wait.ToString());
         }
     }
 }

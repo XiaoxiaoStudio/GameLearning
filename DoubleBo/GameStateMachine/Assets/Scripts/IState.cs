@@ -11,19 +11,18 @@ public enum StateEnum
 
 public abstract class IState
 {
-    public abstract int GetStateID();
+    public abstract string GetStateName();
 
-    public StateEnum m_StateEnum;
+    public string m_StateEnum;
 
-    public IState(StateEnum m_State)
+    public IState(string name)
     {
-        m_StateEnum = m_State;
+        m_StateEnum = name;
     }
+    
+    public abstract void Start(StateMachine stateMachine);
 
+    public abstract void Update();
 
-    public abstract void StartState(StateMachine stateMachine);
-
-    public abstract void UpdateState();
-
-    public abstract void EndState();
+    public abstract void End();
 }
