@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Test : MonoBehaviour {
 
-    private StateMachine m_StateMachine;
+    private StateMachine2 m_StateMachine;
 
     // Use this for initialization
     void Start () {
-        m_StateMachine = new StateMachine();
+        m_StateMachine = new StateMachine2();
 
         m_StateMachine.RegistState(new FlyState(StateEnum.Fly.ToString()));
         m_StateMachine.RegistState(new WaitState(StateEnum.Wait.ToString()));

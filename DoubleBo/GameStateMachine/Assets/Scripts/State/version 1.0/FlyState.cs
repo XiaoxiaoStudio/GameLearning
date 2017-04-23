@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FlyState : IState
 {
-    StateMachine m_StateMachine;
+    StateMachine2 m_StateMachine;
 
     public FlyState(string name) : base(name)
     {
@@ -18,7 +18,7 @@ public class FlyState : IState
         return StateEnum.Fly.ToString();
     }
 
-    public override void Start(StateMachine stateMachine)
+    public override void Start(StateMachine2 stateMachine)
     {
         m_StateMachine = stateMachine;
         Debug.Log(GetStateName() + "Start，framecount is" + Time.frameCount);
