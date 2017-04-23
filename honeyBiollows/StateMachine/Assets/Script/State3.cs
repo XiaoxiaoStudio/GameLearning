@@ -8,7 +8,6 @@ public class State3 : StateBase {
         mCurrenType = StateType.StateThree;
     }
 
-
     public override void StateStart()
     {
         Debug.Log("state3 Start");
