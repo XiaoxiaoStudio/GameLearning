@@ -52,7 +52,7 @@ public class EventProcessor
         }
     }
 
-    private void AddHandler(int eventID, EventHandlerDelegate handler)
+    private void AddHandler(int id, EventHandlerDelegate handler)
     {
         if (handler == null)
         {
@@ -63,10 +63,10 @@ public class EventProcessor
             m_RegisteredEvtHandlers = new Dictionary<int, List<EventHandlerDelegate>>();
         }
         List<EventHandlerDelegate> handlers = null;
-        if (m_RegisteredEvtHandlers.TryGetValue((int)eventID, out handlers) == false)
+        if (m_RegisteredEvtHandlers.TryGetValue((int)id, out handlers) == false)
         {
             handlers = new List<EventHandlerDelegate>();
-            m_RegisteredEvtHandlers.Add(eventID, handlers);
+            m_RegisteredEvtHandlers.Add(id, handlers);
         }
         for (int i = 0; i < handlers.Count; i++)
         {
@@ -79,10 +79,10 @@ public class EventProcessor
         handlers.Add(handler);
     }
 
-    private void RemoveHandler(int eventID, EventHandlerDelegate handler)
+    private void RemoveHandler(int id, EventHandlerDelegate handler)
     {
         List<EventHandlerDelegate> handlers = null;
-        if (m_RegisteredEvtHandlers.TryGetValue(eventID, out handlers))
+        if (m_RegisteredEvtHandlers.TryGetValue(id, out handlers))
         {
             if (handlers != null && handlers.Count > 0)
             {
