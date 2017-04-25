@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StateMachine2
+public class StateMachine
 {
     public Dictionary<string, IState> StateDict;
 
@@ -12,7 +12,7 @@ public class StateMachine2
 
     public IState LastState;
 
-    public StateMachine2()
+    public StateMachine()
     {
         StateDict = new Dictionary<string, IState>();
     }

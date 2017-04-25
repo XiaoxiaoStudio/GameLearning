@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class WaitState : IState
 {
-    StateMachine2 m_StateMachine;
+    StateMachine m_StateMachine;
 
     public WaitState(string name) : base(name)
     {
@@ -19,7 +19,7 @@ public class WaitState : IState
         return StateEnum.Wait.ToString();
     }
 
-    public override void Start(StateMachine2 stateMachine)
+    public override void Start(StateMachine stateMachine)
     {
         m_StateMachine = stateMachine;
         Debug.Log(GetStateName() + "Start，framecount is" + Time.frameCount);

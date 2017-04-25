@@ -20,7 +20,7 @@ public abstract class IState
         m_StateEnum = name;
     }
     
-    public abstract void Start(StateMachine2 stateMachine);
+    public abstract void Start(StateMachine stateMachine);
 
     public abstract void Update();
 
