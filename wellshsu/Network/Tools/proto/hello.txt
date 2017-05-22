@@ -1,0 +1,7 @@
+message A{
+	required int32 val = 1;
+}
+
+message B{
+	repeated A list = 1;
+}

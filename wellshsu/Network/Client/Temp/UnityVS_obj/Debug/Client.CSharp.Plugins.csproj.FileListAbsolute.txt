@@ -1,0 +1,1 @@
+C:\Workspace\Github\GameLearning\wellshsu\Network\Client\Temp\UnityVS_obj\Debug\Client.CSharp.Plugins.csprojResolveAssemblyReference.cache

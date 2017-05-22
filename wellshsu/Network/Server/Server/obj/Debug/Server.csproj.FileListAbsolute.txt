@@ -1,0 +1,5 @@
+C:\Workspace\Github\GameLearning\wellshsu\Network\Server\Server\bin\Debug\Server.exe.config
+C:\Workspace\Github\GameLearning\wellshsu\Network\Server\Server\bin\Debug\Server.exe
+C:\Workspace\Github\GameLearning\wellshsu\Network\Server\Server\bin\Debug\Server.pdb
+C:\Workspace\Github\GameLearning\wellshsu\Network\Server\Server\obj\Debug\Server.exe
+C:\Workspace\Github\GameLearning\wellshsu\Network\Server\Server\obj\Debug\Server.pdb
