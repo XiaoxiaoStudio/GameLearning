@@ -1,0 +1,7 @@
+F:\Unity Files\PrintAndSavaLogInfo\Assets\PrintLog\PrintDebug\PrintDebug\bin\Debug\PrintDebug.dll
+F:\Unity Files\PrintAndSavaLogInfo\Assets\PrintLog\PrintDebug\PrintDebug\bin\Debug\PrintDebug.pdb
+F:\Unity Files\PrintAndSavaLogInfo\Assets\PrintLog\PrintDebug\PrintDebug\bin\Debug\UnityEngine.dll
+F:\Unity Files\PrintAndSavaLogInfo\Assets\PrintLog\PrintDebug\PrintDebug\bin\Debug\UnityEngine.xml
+F:\Unity Files\PrintAndSavaLogInfo\Assets\PrintLog\PrintDebug\PrintDebug\obj\Debug\PrintDebug.dll
+F:\Unity Files\PrintAndSavaLogInfo\Assets\PrintLog\PrintDebug\PrintDebug\obj\Debug\PrintDebug.pdb
+F:\Unity Files\PrintAndSavaLogInfo\Assets\PrintLog\PrintDebug\PrintDebug\obj\Debug\PrintDebug.csprojResolveAssemblyReference.cache

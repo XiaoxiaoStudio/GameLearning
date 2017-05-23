@@ -42,7 +42,7 @@ public class EventManager<T>
             }
         }
 
-        if(!m_EventDic.ContainsKey(EventID))
+        if (!m_EventDic.ContainsKey(EventID))
         {
             tempEventList = new List<EventDele<T>>();
             tempEventList.Add(Event);
@@ -51,7 +51,7 @@ public class EventManager<T>
         }
     }
 
-    public void NotifyEvent(int EventID,T t)
+    public void NotifyEvent(int EventID, T t)
     {
         if (t == null)
             return;
@@ -93,7 +93,7 @@ public class EventManager<T>
         List<EventDele<T>> tempEventList = null;
 
         m_EventDic.TryGetValue(EventID, out tempEventList);
-        if(tempEventList!=null)
+        if (tempEventList != null)
         {
             tempEventList.Remove(Event);
             if (tempEventList.Count <= 0)
