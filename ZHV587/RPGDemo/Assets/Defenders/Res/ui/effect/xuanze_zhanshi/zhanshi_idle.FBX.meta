@@ -1,0 +1,166 @@
+fileFormatVersion: 2
+guid: adf34d55a13066749986811cf237be90
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bone002
+    100002: Bone003
+    100004: Bone004
+    100006: Bone005
+    100008: Bone006
+    100010: Bone007
+    100012: Bone008
+    100014: Bone009
+    100016: Bone010
+    100018: Bone011
+    100020: Bone012
+    100022: Plane005
+    100024: Plane006
+    100026: Plane007
+    100028: Plane008
+    100030: Plane009
+    100032: Plane011
+    100034: Plane012
+    100036: Plane013
+    100038: Plane014
+    100040: Plane015
+    100042: Plane016
+    100044: Point001
+    100046: Point002
+    100048: Point003
+    100050: Point004
+    100052: Point005
+    100054: Point006
+    100056: Point007
+    100058: Point008
+    100060: Point009
+    100062: Point010
+    100064: //RootNode
+    400000: Bone002
+    400002: Bone003
+    400004: Bone004
+    400006: Bone005
+    400008: Bone006
+    400010: Bone007
+    400012: Bone008
+    400014: Bone009
+    400016: Bone010
+    400018: Bone011
+    400020: Bone012
+    400022: Plane005
+    400024: Plane006
+    400026: Plane007
+    400028: Plane008
+    400030: Plane009
+    400032: Plane011
+    400034: Plane012
+    400036: Plane013
+    400038: Plane014
+    400040: Plane015
+    400042: Plane016
+    400044: Point001
+    400046: Point002
+    400048: Point003
+    400050: Point004
+    400052: Point005
+    400054: Point006
+    400056: Point007
+    400058: Point008
+    400060: Point009
+    400062: Point010
+    400064: //RootNode
+    4300000: Plane005
+    4300002: Plane006
+    4300004: Plane007
+    4300006: Plane008
+    4300008: Plane009
+    4300010: Plane011
+    4300012: Plane012
+    4300014: Plane013
+    4300016: Plane014
+    4300018: Plane015
+    4300020: Plane016
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Plane005
+    13700002: Plane006
+    13700004: Plane007
+    13700006: Plane008
+    13700008: Plane009
+    13700010: Plane011
+    13700012: Plane012
+    13700014: Plane013
+    13700016: Plane014
+    13700018: Plane015
+    13700020: Plane016
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 2
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 2
+    addColliders: 0
+    importBlendShapes: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 2
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

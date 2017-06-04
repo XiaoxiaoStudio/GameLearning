@@ -1,0 +1,16 @@
+<SERoom ID="10086">
+
+  <SEGround Prefab=""></SEGround>
+
+  <SEBirthPoint Distance="" Position="" Rotation="" Scale="" ></SEBirthPoint>
+
+  <SEBigWave Number="" BoxCenter="" BoxSize="" Position="" Rotation="" Scale="">
+    <SEObstacle  Prefab="" Position="" Rotation="" Scale=""></SEObstacle>
+    <SEObstacle  Prefab="" Position="" Rotation="" Scale=""></SEObstacle>
+    <SESmallWave Number="" Position="" Rotation="" Scale="" >
+      <SEMonster ID="" DelayAppear="" Position="" Rotation="" Scale="" ></SEMonster>
+    </SESmallWave>
+  </SEBigWave>
+
+  <SEEffect Prefab=""></SEEffect>
+</SERoom>

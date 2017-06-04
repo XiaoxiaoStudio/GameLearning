@@ -1,0 +1,293 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1000010581490218}
+  m_IsPrefabParent: 1
+--- !u!1 &1000010581490218
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000012478880510}
+  - 114: {fileID: 114000014048469972}
+  m_Layer: 12
+  m_Name: MotionMachine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1000011937702632
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000012877539674}
+  - 114: {fileID: 114000010221388288}
+  m_Layer: 12
+  m_Name: Crossfader
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1000013766232738
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000011439625138}
+  - 114: {fileID: 114000013295809618}
+  m_Layer: 12
+  m_Name: Commander
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4000011439625138
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013766232738}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4000012478880510}
+  m_RootOrder: 1
+--- !u!4 &4000012478880510
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010581490218}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 4000012877539674}
+  - {fileID: 4000011439625138}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!4 &4000012877539674
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011937702632}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4000012478880510}
+  m_RootOrder: 0
+--- !u!114 &114000010221388288
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011937702632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4ce5e395e4a7f746a4d1d76baeb34be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Machine: {fileID: 114000014048469972}
+  Roots:
+  - DisplayName: RMT_Idle
+    Motion: 0
+    Targets:
+    - DisplayName: RMT_Idle
+      Motion: 0
+      FadeValue: 0
+    - DisplayName: RMT_Attack1
+      Motion: 61
+      FadeValue: 0.2
+    - DisplayName: RMT_Skill1
+      Motion: 142
+      FadeValue: 0.2
+    - DisplayName: RMT_Walk
+      Motion: 33
+      FadeValue: 0.2
+  - DisplayName: RMT_Attack1
+    Motion: 61
+    Targets:
+    - DisplayName: RMT_Idle
+      Motion: 0
+      FadeValue: 0.2
+    - DisplayName: RMT_Attack1
+      Motion: 61
+      FadeValue: 0
+    - DisplayName: RMT_Skill1
+      Motion: 142
+      FadeValue: 0.2
+    - DisplayName: RMT_Walk
+      Motion: 33
+      FadeValue: 0.2
+  - DisplayName: RMT_Skill1
+    Motion: 142
+    Targets:
+    - DisplayName: RMT_Idle
+      Motion: 0
+      FadeValue: 0.2
+    - DisplayName: RMT_Attack1
+      Motion: 61
+      FadeValue: 0.2
+    - DisplayName: RMT_Skill1
+      Motion: 142
+      FadeValue: 0
+    - DisplayName: RMT_Walk
+      Motion: 33
+      FadeValue: 0.2
+  - DisplayName: RMT_Walk
+    Motion: 33
+    Targets:
+    - DisplayName: RMT_Idle
+      Motion: 0
+      FadeValue: 0.2
+    - DisplayName: RMT_Attack1
+      Motion: 61
+      FadeValue: 0.2
+    - DisplayName: RMT_Skill1
+      Motion: 142
+      FadeValue: 0.2
+    - DisplayName: RMT_Walk
+      Motion: 33
+      FadeValue: 0
+--- !u!114 &114000013295809618
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013766232738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4deadceea7485f648a2ab535e367ba97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Commands:
+  - DisplayName: CC_Idle
+    Type: 1
+    SequentialMotions: 00000000
+  - DisplayName: CC_Attack1
+    Type: 30
+    SequentialMotions: 3d000000
+  - DisplayName: CC_Skill1
+    Type: 40
+    SequentialMotions: 8e000000
+  - DisplayName: CC_Walk
+    Type: 20
+    SequentialMotions: 21000000
+  ChangeableTrees: []
+--- !u!114 &114000014048469972
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010581490218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25214d77c8edc5e45b4357d95850b73d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Motions:
+  - Type: 0
+    ClipName: idle
+    WrapMode: 2
+    Speed: 1
+    HowToFinish: 3
+    Machine: {fileID: 114000014048469972}
+    BeginTime: 0
+    EndTime: 0
+    IsPlayAnimation: 0
+    TimeScalePlugins: []
+    CameraShakePlugins: []
+    HitJudgePlugins: []
+    MotionSpeedPlugins: []
+    EffectPlugins: []
+    MovePlugins: []
+  - Type: 61
+    ClipName: attack_1
+    WrapMode: 1
+    Speed: 1
+    HowToFinish: 2
+    Machine: {fileID: 114000014048469972}
+    BeginTime: 0
+    EndTime: 0
+    IsPlayAnimation: 0
+    TimeScalePlugins: []
+    CameraShakePlugins: []
+    HitJudgePlugins: []
+    MotionSpeedPlugins: []
+    EffectPlugins: []
+    MovePlugins: []
+  - Type: 142
+    ClipName: skill_1
+    WrapMode: 0
+    Speed: 1
+    HowToFinish: 3
+    Machine: {fileID: 114000014048469972}
+    BeginTime: 0
+    EndTime: 0
+    IsPlayAnimation: 0
+    TimeScalePlugins: []
+    CameraShakePlugins: []
+    HitJudgePlugins: []
+    MotionSpeedPlugins: []
+    EffectPlugins:
+    - IdentifyName: effect
+      BeginTime: 0.1
+      EndTime: 1.4
+      PlayOnMotionEnd: 0
+      DontStopOnMotionEnd: 1
+      Root: {fileID: 0}
+      RootPath: 
+    MovePlugins:
+    - IdentifyName: flash_move
+      BeginTime: 1
+      EndTime: 1.4
+      PlayOnMotionEnd: 0
+      DontStopOnMotionEnd: 0
+      MoveSpeed: 14
+      CutClipLength: 0
+      Type: 3
+      EaseType: 20
+  - Type: 33
+    ClipName: run
+    WrapMode: 2
+    Speed: 1
+    HowToFinish: 3
+    Machine: {fileID: 114000014048469972}
+    BeginTime: 0
+    EndTime: 0
+    IsPlayAnimation: 0
+    TimeScalePlugins: []
+    CameraShakePlugins: []
+    HitJudgePlugins: []
+    MotionSpeedPlugins: []
+    EffectPlugins: []
+    MovePlugins: []
+  Character: {fileID: 0}
+  Animation: {fileID: 0}
+  Crossfader: {fileID: 114000010221388288}
+  Commander: {fileID: 114000013295809618}
+  LastPlayMotion: 18

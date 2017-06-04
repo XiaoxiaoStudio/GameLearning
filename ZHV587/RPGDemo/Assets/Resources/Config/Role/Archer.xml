@@ -1,0 +1,482 @@
+<Character >
+
+  <NavAgent Height="3" Radius="0.4" Speed="8.0" Acceleration="70" AutoBraking="false" AngularSpeed="720" AvoidancePriority="1" ObstacleAvoidanceType="NoObstacleAvoidance"/>
+
+  <Motions>
+    <Motion Type = "RMT_Idle" Clip="idle" Speed="1" WrapMode="Loop" Life="WhenAnimationEnd" />
+    <Motion Type = "RMT_Walk" Clip="run" Speed="1" WrapMode="Loop" Life="WhenAnimationEnd" />
+    <Motion Type = "RMT_Run" Clip="run_fast" Speed="1" WrapMode="Loop" Life="WhenAnimationEnd" />
+    <Motion Type = "RMT_Attack_1" Clip="attack_1" Speed="1" WrapMode="Clamp" Life="WhenAnimationEnd" />
+    <Motion Type = "RMT_Attack_2" Clip="attack_2" Speed="1" WrapMode="Clamp" Life="WhenAnimationEnd" />
+    <Motion Type = "RMT_Attack_3" Clip="attack_3" Speed="1" WrapMode="Clamp" Life="WhenAnimationEnd" />
+    <Motion Type = "RMT_Attack_4" Clip="attack_4" Speed="1" WrapMode="Clamp" Life="WhenAnimationEnd" />
+    <Motion Type = "RMT_Skill_1" Clip="skill_1" Speed="1" WrapMode="Clamp" Life="WhenAnimationEnd" />
+    <Motion Type = "RMT_Skill_2" Clip="skill_2" Speed="1" WrapMode="Clamp" Life="WhenAnimationEnd" />
+    <Motion Type = "RMT_Skill_3" Clip="skill_3" Speed="1" WrapMode="Clamp" Life="WhenAnimationEnd" />
+    <Motion Type = "RMT_BeAttack_1" Clip="beat_back1" Speed="1" WrapMode="Clamp" Life="WhenAnimationEnd" />
+    <Motion Type = "RMT_KnockDown" Clip="knock_down1" Speed="1" WrapMode="Clamp" Life="WhenAnimationEnd" />
+    <Motion Type = "RMT_KnockDownStand" Clip="knockdown_stand" Speed="1" WrapMode="Clamp" Life="WhenAnimationEnd" />
+    <Motion Type = "RMT_Die_1" Clip="die" Speed="1" WrapMode="Clamp" Life="WhenAnimationEnd" />
+  </Motions>
+
+  <AnimationCrossfader>
+    <Tree Clip="idle" Replay="false">
+      <Node Clip="idle" Value="0.2" />
+      <Node Clip="die" Value="0.2" />
+      <Node Clip="run" Value="0.2"  />
+      <Node Clip="run_fast" Value="0.2"  />
+      <Node Clip="attack_1" Value="0.2" />
+      <Node Clip="attack_2" Value="0.2" />
+      <Node Clip="attack_3" Value="0.2" />
+      <Node Clip="attack_4" Value="0.2" />
+      <Node Clip="skill_1" Value="0.2" />
+      <Node Clip="skill_2" Value="0.2" />
+      <Node Clip="skill_3" Value="0.2" />
+      <Node Clip="beat_back1" Value="0.2" />
+      <Node Clip="knock_down1" Value="0.2" />
+      <Node Clip="knockdown_stand" Value="0.2" />
+    </Tree>
+    <Tree Clip="die" >
+      <Node Clip="idle" Value="0.2" />
+      <Node Clip="die" Value="0.2" />
+      <Node Clip="run" Value="0.2"  />
+      <Node Clip="run_fast" Value="0.2"  />
+      <Node Clip="attack_1" Value="0.2" />
+      <Node Clip="attack_2" Value="0.2" />
+      <Node Clip="attack_3" Value="0.2" />
+      <Node Clip="attack_4" Value="0.2" />
+      <Node Clip="skill_1" Value="0.2" />
+      <Node Clip="skill_2" Value="0.2" />
+      <Node Clip="skill_3" Value="0.2" />
+      <Node Clip="beat_back1" Value="0.2" />
+      <Node Clip="knock_down1" Value="0.2" />
+      <Node Clip="knockdown_stand" Value="0.2" />
+    </Tree>
+    <Tree Clip="run" Replay="false">
+      <Node Clip="idle" Value="0.2" />
+      <Node Clip="die" Value="0.2" />
+      <Node Clip="run" Value="0.2"  />
+      <Node Clip="run_fast" Value="0.2"  />
+      <Node Clip="attack_1" Value="0.2" />
+      <Node Clip="attack_2" Value="0.2" />
+      <Node Clip="attack_3" Value="0.2" />
+      <Node Clip="attack_4" Value="0.2" />
+      <Node Clip="skill_1" Value="0.2" />
+      <Node Clip="skill_2" Value="0.2" />
+      <Node Clip="skill_3" Value="0.2" />
+      <Node Clip="beat_back1" Value="0.2" />
+      <Node Clip="knock_down1" Value="0.2" />
+      <Node Clip="knockdown_stand" Value="0.2" />
+    </Tree>
+    <Tree Clip="run_fast" Replay="false">
+      <Node Clip="idle" Value="0.2" />
+      <Node Clip="die" Value="0.2" />
+      <Node Clip="run" Value="0.2"  />
+      <Node Clip="run_fast" Value="0.2"  />
+      <Node Clip="attack_1" Value="0.2" />
+      <Node Clip="attack_2" Value="0.2" />
+      <Node Clip="attack_3" Value="0.2" />
+      <Node Clip="attack_4" Value="0.2" />
+      <Node Clip="skill_1" Value="0.2" />
+      <Node Clip="skill_2" Value="0.2" />
+      <Node Clip="skill_3" Value="0.2" />
+      <Node Clip="beat_back1" Value="0.2" />
+      <Node Clip="knock_down1" Value="0.2" />
+      <Node Clip="knockdown_stand" Value="0.2" />
+    </Tree>
+    <Tree Clip="attack_1" >
+      <Node Clip="idle" Value="0.2" />
+      <Node Clip="die" Value="0.2" />
+      <Node Clip="run" Value="0.2"  />
+      <Node Clip="run_fast" Value="0.2"  />
+      <Node Clip="attack_1" Value="0.2" />
+      <Node Clip="attack_2" Value="0.2" />
+      <Node Clip="attack_3" Value="0.2" />
+      <Node Clip="attack_4" Value="0.2" />
+      <Node Clip="skill_1" Value="0.2" />
+      <Node Clip="skill_2" Value="0.2" />
+      <Node Clip="skill_3" Value="0.2" />
+      <Node Clip="beat_back1" Value="0.2" />
+      <Node Clip="knock_down1" Value="0.2" />
+      <Node Clip="knockdown_stand" Value="0.2" />
+    </Tree>
+    <Tree Clip="attack_2" >
+      <Node Clip="idle" Value="0.2" />
+      <Node Clip="die" Value="0.2" />
+      <Node Clip="run" Value="0.2"  />
+      <Node Clip="run_fast" Value="0.2"  />
+      <Node Clip="attack_1" Value="0.2" />
+      <Node Clip="attack_2" Value="0.2" />
+      <Node Clip="attack_3" Value="0.2" />
+      <Node Clip="attack_4" Value="0.2" />
+      <Node Clip="skill_1" Value="0.2" />
+      <Node Clip="skill_2" Value="0.2" />
+      <Node Clip="skill_3" Value="0.2" />
+      <Node Clip="beat_back1" Value="0.2" />
+      <Node Clip="knock_down1" Value="0.2" />
+      <Node Clip="knockdown_stand" Value="0.2" />
+    </Tree>
+    <Tree Clip="attack_3" >
+      <Node Clip="idle" Value="0.2" />
+      <Node Clip="die" Value="0.2" />
+      <Node Clip="run" Value="0.2"  />
+      <Node Clip="run_fast" Value="0.2"  />
+      <Node Clip="attack_1" Value="0.2" />
+      <Node Clip="attack_2" Value="0.2" />
+      <Node Clip="attack_3" Value="0.2" />
+      <Node Clip="attack_4" Value="0.2" />
+      <Node Clip="skill_1" Value="0.2" />
+      <Node Clip="skill_2" Value="0.2" />
+      <Node Clip="skill_3" Value="0.2" />
+      <Node Clip="beat_back1" Value="0.2" />
+      <Node Clip="knock_down1" Value="0.2" />
+      <Node Clip="knockdown_stand" Value="0.2" />
+    </Tree>
+    <Tree Clip="attack_4" >
+      <Node Clip="idle" Value="0.2" />
+      <Node Clip="die" Value="0.2" />
+      <Node Clip="run" Value="0.2"  />
+      <Node Clip="run_fast" Value="0.2"  />
+      <Node Clip="attack_1" Value="0.2" />
+      <Node Clip="attack_2" Value="0.2" />
+      <Node Clip="attack_3" Value="0.2" />
+      <Node Clip="attack_4" Value="0.2" />
+      <Node Clip="skill_1" Value="0.2" />
+      <Node Clip="skill_2" Value="0.2" />
+      <Node Clip="skill_3" Value="0.2" />
+      <Node Clip="beat_back1" Value="0.2" />
+      <Node Clip="knock_down1" Value="0.2" />
+      <Node Clip="knockdown_stand" Value="0.2" />
+    </Tree>
+    <Tree Clip="skill_1" >
+      <Node Clip="idle" Value="0.2" />
+      <Node Clip="die" Value="0.2" />
+      <Node Clip="run" Value="0.2"  />
+      <Node Clip="run_fast" Value="0.2"  />
+      <Node Clip="attack_1" Value="0.2" />
+      <Node Clip="attack_2" Value="0.2" />
+      <Node Clip="attack_3" Value="0.2" />
+      <Node Clip="attack_4" Value="0.2" />
+      <Node Clip="skill_1" Value="0.2" />
+      <Node Clip="skill_2" Value="0.2" />
+      <Node Clip="skill_3" Value="0.2" />
+      <Node Clip="beat_back1" Value="0.2" />
+      <Node Clip="knock_down1" Value="0.2" />
+      <Node Clip="knockdown_stand" Value="0.2" />
+    </Tree>
+    <Tree Clip="skill_2" >
+      <Node Clip="idle" Value="0.2" />
+      <Node Clip="die" Value="0.2" />
+      <Node Clip="run" Value="0.2"  />
+      <Node Clip="run_fast" Value="0.2"  />
+      <Node Clip="attack_1" Value="0.2" />
+      <Node Clip="attack_2" Value="0.2" />
+      <Node Clip="attack_3" Value="0.2" />
+      <Node Clip="attack_4" Value="0.2" />
+      <Node Clip="skill_1" Value="0.2" />
+      <Node Clip="skill_2" Value="0.2" />
+      <Node Clip="skill_3" Value="0.2" />
+      <Node Clip="beat_back1" Value="0.2" />
+      <Node Clip="knock_down1" Value="0.2" />
+      <Node Clip="knockdown_stand" Value="0.2" />
+    </Tree>
+    <Tree Clip="skill_3" >
+      <Node Clip="idle" Value="0.2" />
+      <Node Clip="die" Value="0.2" />
+      <Node Clip="run" Value="0.2"  />
+      <Node Clip="run_fast" Value="0.2"  />
+      <Node Clip="attack_1" Value="0.2" />
+      <Node Clip="attack_2" Value="0.2" />
+      <Node Clip="attack_3" Value="0.2" />
+      <Node Clip="attack_4" Value="0.2" />
+      <Node Clip="skill_1" Value="0.2" />
+      <Node Clip="skill_2" Value="0.2" />
+      <Node Clip="skill_3" Value="0.2" />
+      <Node Clip="beat_back1" Value="0.2" />
+      <Node Clip="knock_down1" Value="0.2" />
+      <Node Clip="knockdown_stand" Value="0.2" />
+    </Tree>
+    <Tree Clip="beat_back1" >
+      <Node Clip="idle" Value="0.2" />
+      <Node Clip="die" Value="0.2" />
+      <Node Clip="run" Value="0.2"  />
+      <Node Clip="run_fast" Value="0.2"  />
+      <Node Clip="attack_1" Value="0.2" />
+      <Node Clip="attack_2" Value="0.2" />
+      <Node Clip="attack_3" Value="0.2" />
+      <Node Clip="attack_4" Value="0.2" />
+      <Node Clip="skill_1" Value="0.2" />
+      <Node Clip="skill_2" Value="0.2" />
+      <Node Clip="skill_3" Value="0.2" />
+      <Node Clip="beat_back1" Value="0.2" />
+      <Node Clip="knock_down1" Value="0.2" />
+      <Node Clip="knockdown_stand" Value="0.2" />
+    </Tree>
+    <Tree Clip="knock_down1">
+      <Node Clip="idle" Value="0.2" />
+      <Node Clip="die" Value="0.2" />
+      <Node Clip="run" Value="0.2"  />
+      <Node Clip="run_fast" Value="0.2"  />
+      <Node Clip="attack_1" Value="0.2" />
+      <Node Clip="attack_2" Value="0.2" />
+      <Node Clip="attack_3" Value="0.2" />
+      <Node Clip="attack_4" Value="0.2" />
+      <Node Clip="skill_1" Value="0.2" />
+      <Node Clip="skill_2" Value="0.2" />
+      <Node Clip="skill_3" Value="0.2" />
+      <Node Clip="beat_back1" Value="0.2" />
+      <Node Clip="knock_down1" Value="0.2" />
+      <Node Clip="knockdown_stand" Value="0.2" />
+    </Tree>
+    <Tree Clip="knockdown_stand" >
+      <Node Clip="idle" Value="0.2" />
+      <Node Clip="die" Value="0.2" />
+      <Node Clip="run" Value="0.2"  />
+      <Node Clip="run_fast" Value="0.2"  />
+      <Node Clip="attack_1" Value="0.2" />
+      <Node Clip="attack_2" Value="0.2" />
+      <Node Clip="attack_3" Value="0.2" />
+      <Node Clip="attack_4" Value="0.2" />
+      <Node Clip="skill_1" Value="0.2" />
+      <Node Clip="skill_2" Value="0.2" />
+      <Node Clip="skill_3" Value="0.2" />
+      <Node Clip="beat_back1" Value="0.2" />
+      <Node Clip="knock_down1" Value="0.2" />
+      <Node Clip="knockdown_stand" Value="0.2" />
+    </Tree>
+  </AnimationCrossfader>
+
+  <Commander>
+
+    <Command Type="CC_Idle" SequentialMotions="RMT_Idle"  AutoAim="false">
+      <Changeable Type="CC_Idle" />
+      <Changeable Type="CC_Walk"/>
+      <Changeable Type="CC_Run"/>
+      <Changeable Type="CC_Attack_1" />
+      <Changeable Type="CC_Attack_2"/>
+      <Changeable Type="CC_Attack_3"/>
+      <Changeable Type="CC_Attack_4" />
+      <Changeable Type="CC_Skill_1"/>
+      <Changeable Type="CC_Skill_2"/>
+      <Changeable Type="CC_Skill_3" />
+      <Changeable Type="CC_BeAttack_1"/>
+      <Changeable Type="CC_KnockDown"/>
+      <Changeable Type="CC_KnockDownStand" />
+      <Changeable Type="CC_Die_1"/>
+    </Command>
+
+    <Command Type="CC_Walk" SequentialMotions="RMT_Walk"  >
+      <Changeable Type="CC_Idle" />
+      <Changeable Type="CC_Walk"/>
+      <Changeable Type="CC_Run"/>
+      <Changeable Type="CC_Die_1"/>
+    </Command>
+
+    <Command Type="CC_Run" SequentialMotions="RMT_Run" >
+      <Changeable Type="CC_Idle" />
+      <Changeable Type="CC_Walk"/>
+      <Changeable Type="CC_Run"/>
+      <Changeable Type="CC_Die_1"/>
+    </Command>
+
+    <Command Type="CC_Attack_1" SequentialMotions="RMT_Attack_1" AutoNext="CC_Attack_2" >
+      <Changeable Type="CC_Idle" />
+      <Changeable Type="CC_Walk"/>
+      <Changeable Type="CC_Run"/>
+      <Changeable Type="CC_Attack_1" />
+      <Changeable Type="CC_Attack_2"/>
+      <Changeable Type="CC_Attack_3"/>
+      <Changeable Type="CC_Attack_4" />
+      <Changeable Type="CC_Skill_1"/>
+      <Changeable Type="CC_Skill_2"/>
+      <Changeable Type="CC_Skill_3" />
+      <Changeable Type="CC_BeAttack_1"/>
+      <Changeable Type="CC_KnockDown"/>
+      <Changeable Type="CC_KnockDownStand" />
+      <Changeable Type="CC_Die_1"/>
+    </Command>
+    <Command Type="CC_Attack_2" SequentialMotions="RMT_Attack_2" AutoNext="CC_Attack_3">
+      <Changeable Type="CC_Idle" />
+      <Changeable Type="CC_Walk"/>
+      <Changeable Type="CC_Run"/>
+      <Changeable Type="CC_Attack_1" />
+      <Changeable Type="CC_Attack_2"/>
+      <Changeable Type="CC_Attack_3"/>
+      <Changeable Type="CC_Attack_4" />
+      <Changeable Type="CC_Skill_1"/>
+      <Changeable Type="CC_Skill_2"/>
+      <Changeable Type="CC_Skill_3" />
+      <Changeable Type="CC_BeAttack_1"/>
+      <Changeable Type="CC_KnockDown"/>
+      <Changeable Type="CC_KnockDownStand" />
+      <Changeable Type="CC_Die_1"/>
+    </Command>
+    <Command Type="CC_Attack_3" SequentialMotions="RMT_Attack_3" AutoNext="CC_Attack_4">
+      <Changeable Type="CC_Idle" />
+      <Changeable Type="CC_Walk"/>
+      <Changeable Type="CC_Run"/>
+      <Changeable Type="CC_Attack_1" />
+      <Changeable Type="CC_Attack_2"/>
+      <Changeable Type="CC_Attack_3"/>
+      <Changeable Type="CC_Attack_4" />
+      <Changeable Type="CC_Skill_1"/>
+      <Changeable Type="CC_Skill_2"/>
+      <Changeable Type="CC_Skill_3" />
+      <Changeable Type="CC_BeAttack_1"/>
+      <Changeable Type="CC_KnockDown"/>
+      <Changeable Type="CC_KnockDownStand" />
+      <Changeable Type="CC_Die_1"/>
+    </Command>
+    <Command Type="CC_Attack_4" SequentialMotions="RMT_Attack_4">
+      <Changeable Type="CC_Idle" />
+      <Changeable Type="CC_Walk"/>
+      <Changeable Type="CC_Run"/>
+      <Changeable Type="CC_Attack_1" />
+      <Changeable Type="CC_Attack_2"/>
+      <Changeable Type="CC_Attack_3"/>
+      <Changeable Type="CC_Attack_4" />
+      <Changeable Type="CC_Skill_1"/>
+      <Changeable Type="CC_Skill_2"/>
+      <Changeable Type="CC_Skill_3" />
+      <Changeable Type="CC_BeAttack_1"/>
+      <Changeable Type="CC_KnockDown"/>
+      <Changeable Type="CC_KnockDownStand" />
+      <Changeable Type="CC_Die_1"/>
+    </Command>
+    <Command Type="CC_Skill_1" SequentialMotions="RMT_Skill_1" >
+      <Changeable Type="CC_Idle" />
+      <Changeable Type="CC_Walk"/>
+      <Changeable Type="CC_Run"/>
+      <Changeable Type="CC_Attack_1" />
+      <Changeable Type="CC_Attack_2"/>
+      <Changeable Type="CC_Attack_3"/>
+      <Changeable Type="CC_Attack_4" />
+      <Changeable Type="CC_Skill_1"/>
+      <Changeable Type="CC_Skill_2"/>
+      <Changeable Type="CC_Skill_3" />
+      <Changeable Type="CC_BeAttack_1"/>
+      <Changeable Type="CC_KnockDown"/>
+      <Changeable Type="CC_KnockDownStand" />
+      <Changeable Type="CC_Die_1"/>
+    </Command>
+    <Command Type="CC_Skill_2" SequentialMotions="RMT_Skill_2" >
+      <Changeable Type="CC_Idle" />
+      <Changeable Type="CC_Walk"/>
+      <Changeable Type="CC_Run"/>
+      <Changeable Type="CC_Attack_1" />
+      <Changeable Type="CC_Attack_2"/>
+      <Changeable Type="CC_Attack_3"/>
+      <Changeable Type="CC_Attack_4" />
+      <Changeable Type="CC_Skill_1"/>
+      <Changeable Type="CC_Skill_2"/>
+      <Changeable Type="CC_Skill_3" />
+      <Changeable Type="CC_BeAttack_1"/>
+      <Changeable Type="CC_KnockDown"/>
+      <Changeable Type="CC_KnockDownStand" />
+      <Changeable Type="CC_Die_1"/>
+    </Command>
+    <Command Type="CC_Skill_3" SequentialMotions="RMT_Skill_3" >
+      <Changeable Type="CC_Idle" />
+      <Changeable Type="CC_Walk"/>
+      <Changeable Type="CC_Run"/>
+      <Changeable Type="CC_Attack_1" />
+      <Changeable Type="CC_Attack_2"/>
+      <Changeable Type="CC_Attack_3"/>
+      <Changeable Type="CC_Attack_4" />
+      <Changeable Type="CC_Skill_1"/>
+      <Changeable Type="CC_Skill_2"/>
+      <Changeable Type="CC_Skill_3" />
+      <Changeable Type="CC_BeAttack_1"/>
+      <Changeable Type="CC_KnockDown"/>
+      <Changeable Type="CC_KnockDownStand" />
+      <Changeable Type="CC_Die_1"/>
+    </Command>
+    <Command Type="CC_BeAttack_1" SequentialMotions="RMT_BeAttack_1" >
+      <Changeable Type="CC_Idle" />
+      <Changeable Type="CC_Walk"/>
+      <Changeable Type="CC_Run"/>
+      <Changeable Type="CC_Attack_1" />
+      <Changeable Type="CC_Attack_2"/>
+      <Changeable Type="CC_Attack_3"/>
+      <Changeable Type="CC_Attack_4" />
+      <Changeable Type="CC_Skill_1"/>
+      <Changeable Type="CC_Skill_2"/>
+      <Changeable Type="CC_Skill_3" />
+      <Changeable Type="CC_BeAttack_1"/>
+      <Changeable Type="CC_KnockDown"/>
+      <Changeable Type="CC_KnockDownStand" />
+      <Changeable Type="CC_Die_1"/>
+    </Command>
+    <Command Type="CC_KnockDown" SequentialMotions="RMT_KnockDown" >
+      <Changeable Type="CC_Idle" />
+      <Changeable Type="CC_Walk"/>
+      <Changeable Type="CC_Run"/>
+      <Changeable Type="CC_Attack_1" />
+      <Changeable Type="CC_Attack_2"/>
+      <Changeable Type="CC_Attack_3"/>
+      <Changeable Type="CC_Attack_4" />
+      <Changeable Type="CC_Skill_1"/>
+      <Changeable Type="CC_Skill_2"/>
+      <Changeable Type="CC_Skill_3" />
+      <Changeable Type="CC_BeAttack_1"/>
+      <Changeable Type="CC_KnockDown"/>
+      <Changeable Type="CC_KnockDownStand" />
+      <Changeable Type="CC_Die_1"/>
+    </Command>
+    <Command Type="CC_KnockDownStand" SequentialMotions="RMT_KnockDownStand" >
+      <Changeable Type="CC_Idle" />
+      <Changeable Type="CC_Walk"/>
+      <Changeable Type="CC_Run"/>
+      <Changeable Type="CC_Attack_1" />
+      <Changeable Type="CC_Attack_2"/>
+      <Changeable Type="CC_Attack_3"/>
+      <Changeable Type="CC_Attack_4" />
+      <Changeable Type="CC_Skill_1"/>
+      <Changeable Type="CC_Skill_2"/>
+      <Changeable Type="CC_Skill_3" />
+      <Changeable Type="CC_BeAttack_1"/>
+      <Changeable Type="CC_KnockDown"/>
+      <Changeable Type="CC_KnockDownStand" />
+      <Changeable Type="CC_Die_1"/>
+    </Command>
+    <Command Type="CC_Die_1" SequentialMotions="RMT_Die_1" AutoNext="None">
+      <Changeable Type="CC_Idle" />
+    </Command>
+
+  </Commander>
+
+  <SkillController>
+    <Skill TriggerCommand="CC_Skill_1" ID="10086" PlayMode="StopCurrent" StopMode="OnCommandEnd">
+      <Plugin Name="SkillEffectPlugin" BeginTime="0" EndTime="1" RootPath=""  Position="(0,0.2,2)" EffectPath="Effect/SkillEffect/shayu_skill1_1/shayu_skill1_1"  PlayMode="StopLastTask" ></Plugin>
+      <Plugin Name="SkillAttackPlugin" BeginTime="0" EndTime="1"  Radius="3" Angles="180" HitInterval="0.2" HitCount="5"></Plugin>
+    </Skill>
+  </SkillController>
+
+  <Flayers>
+    <Flayer></Flayer>
+  </Flayers>
+
+  <AIMachine>
+
+    <States>
+      <State Name="AS_Idle" />
+      <State Name="AS_SearchEnemy"/>
+      <State Name="AS_Track" StopRadius="0" />
+      <State Name="AS_Skill_1" ForceStop="true"/>
+    </States>
+
+    <Triggers>
+      <Trigger ExecuteState="AS_SearchEnemy">
+        <Condition Name="AC_HasNoEnemy" />
+      </Trigger>
+      <Trigger ExecuteState="AS_Track">
+        <Condition Name="AC_Distance" Min="2" Max="20" />
+      </Trigger>
+      <Trigger ExecuteState="AS_Skill_1" Random="30">
+        <Condition Name="AC_Distance" Min="0" Max="2" />
+      </Trigger>
+    </Triggers>
+
+  </AIMachine>
+
+</Character>
