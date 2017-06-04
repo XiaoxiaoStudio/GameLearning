@@ -1,0 +1,135 @@
+fileFormatVersion: 2
+guid: 4263048c1f1bd1d4d8b9da74f6b5f88a
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Bip001
+    100004: Bip001 Head
+    100006: Bip001 L Calf
+    100008: Bip001 L Foot
+    100010: Bip001 L Thigh
+    100012: Bip001 L Toe0
+    100014: Bip001 Neck
+    100016: Bip001 Pelvis
+    100018: Bip001 R Calf
+    100020: Bip001 R Foot
+    100022: Bip001 R Thigh
+    100024: Bip001 R Toe0
+    100026: Bip001 Spine
+    100028: Bone001
+    100030: Bone002
+    100032: Bone003
+    100034: Bone004
+    100036: Bone005
+    100038: Bone006
+    100040: Bone007
+    100042: Bone008
+    100044: Bone009
+    100046: Bone010
+    100048: Bone011
+    100050: Bone012
+    100052: Bone013
+    100054: Bone014
+    100056: Bone015
+    400000: //RootNode
+    400002: Bip001
+    400004: Bip001 Head
+    400006: Bip001 L Calf
+    400008: Bip001 L Foot
+    400010: Bip001 L Thigh
+    400012: Bip001 L Toe0
+    400014: Bip001 Neck
+    400016: Bip001 Pelvis
+    400018: Bip001 R Calf
+    400020: Bip001 R Foot
+    400022: Bip001 R Thigh
+    400024: Bip001 R Toe0
+    400026: Bip001 Spine
+    400028: Bone001
+    400030: Bone002
+    400032: Bone003
+    400034: Bone004
+    400036: Bone005
+    400038: Bone006
+    400040: Bone007
+    400042: Bone008
+    400044: Bone009
+    400046: Bone010
+    400048: Bone011
+    400050: Bone012
+    400052: Bone013
+    400054: Bone014
+    400056: Bone015
+    7400000: Take 001
+    11100000: //RootNode
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 2
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 2
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

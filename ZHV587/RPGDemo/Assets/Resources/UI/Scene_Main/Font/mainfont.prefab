@@ -1,0 +1,465 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &151094
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 441844}
+  - 114: {fileID: 11455028}
+  m_Layer: 0
+  m_Name: mainfont
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &441844
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 151094}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11455028
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 151094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4eb3a400afab046abb8471a9d746d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mMat: {fileID: 2100000, guid: 574beaaa949a7e64c8dc26314e659d28, type: 2}
+  mUVRect:
+    serializedVersion: 2
+    x: .8515625
+    y: .40625
+    width: .5
+    height: .5
+  mFont:
+    mSize: 32
+    mBase: 26
+    mWidth: 64
+    mHeight: 64
+    mSpriteName: Coin_,
+    mSaved:
+    - index: 44
+      x: 0
+      y: 10
+      width: 5
+      height: 10
+      offsetX: 1
+      offsetY: 1
+      advance: 7
+      channel: 15
+      kerning: 
+    - index: 48
+      x: 0
+      y: 43
+      width: 17
+      height: 21
+      offsetX: 1
+      offsetY: 1
+      advance: 19
+      channel: 15
+      kerning: 
+    - index: 49
+      x: 0
+      y: 21
+      width: 17
+      height: 21
+      offsetX: 1
+      offsetY: 1
+      advance: 19
+      channel: 15
+      kerning: 
+    - index: 50
+      x: 18
+      y: 43
+      width: 17
+      height: 21
+      offsetX: 1
+      offsetY: 1
+      advance: 19
+      channel: 15
+      kerning: 
+    - index: 51
+      x: 36
+      y: 43
+      width: 17
+      height: 21
+      offsetX: 1
+      offsetY: 1
+      advance: 19
+      channel: 15
+      kerning: 
+  mAtlas: {fileID: 11489878, guid: fcf5e2ebe97133e4696dda2afcbaa15a, type: 2}
+  mReplacement: {fileID: 0}
+  mSymbols:
+  - sequence: 0
+    spriteName: Coin_0
+  - sequence: 1
+    spriteName: Coin_1
+  - sequence: 2
+    spriteName: Coin_2
+  - sequence: 3
+    spriteName: Coin_3
+  - sequence: 4
+    spriteName: Coin_4
+  - sequence: 5
+    spriteName: Coin_5
+  - sequence: 6
+    spriteName: Coin_6
+  - sequence: 7
+    spriteName: Coin_7
+  - sequence: 8
+    spriteName: Coin_8
+  - sequence: 9
+    spriteName: Coin_9
+  - sequence: ','
+    spriteName: Coin_,
+  - sequence: '@Ten'
+    spriteName: '@Ten'
+  - sequence: '*'
+    spriteName: Coin_x
+  - sequence: '@Billio'
+    spriteName: '@Billio'
+  - sequence: Coin_10
+    spriteName: Coin_10
+  mDynamicFont: {fileID: 0}
+  mDynamicFontSize: 16
+  mDynamicFontStyle: 0
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: mSymbols.Array.size
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSaved.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mUVRect.x
+      value: .015625
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mUVRect.y
+      value: .1015625
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mUVRect.width
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mUVRect.height
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mAtlas
+      value: 
+      objectReference: {fileID: 11489878, guid: fcf5e2ebe97133e4696dda2afcbaa15a,
+        type: 2}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSpriteName
+      value: Coin_,
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSymbols.Array.data[0].sequence
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSymbols.Array.data[0].spriteName
+      value: Coin_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSymbols.Array.data[1].sequence
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSymbols.Array.data[2].sequence
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSymbols.Array.data[2].spriteName
+      value: Subtract_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSymbols.Array.data[1].spriteName
+      value: Subtract_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSymbols.Array.data[3].spriteName
+      value: Subtract_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSymbols.Array.data[4].spriteName
+      value: Subtract_,
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSymbols.Array.data[5].spriteName
+      value: Subtract_04
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSymbols.Array.data[6].spriteName
+      value: Subtract_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSymbols.Array.data[7].spriteName
+      value: Subtract_6
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSymbols.Array.data[8].spriteName
+      value: Subtract_7
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSymbols.Array.data[9].spriteName
+      value: Subtract_8
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSymbols.Array.data[10].spriteName
+      value: Subtract_9
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSymbols.Array.data[10].sequence
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSymbols.Array.data[9].sequence
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSymbols.Array.data[8].sequence
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSymbols.Array.data[7].sequence
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSymbols.Array.data[6].sequence
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSymbols.Array.data[5].sequence
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSymbols.Array.data[4].sequence
+      value: ','
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSymbols.Array.data[3].sequence
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSaved.Array.data[0].index
+      value: 44
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSaved.Array.data[0].y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSaved.Array.data[0].width
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSaved.Array.data[0].height
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSaved.Array.data[0].offsetX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSaved.Array.data[0].offsetY
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSaved.Array.data[0].advance
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSaved.Array.data[0].channel
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSaved.Array.data[1].index
+      value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSaved.Array.data[1].y
+      value: 43
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSaved.Array.data[1].width
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSaved.Array.data[1].height
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSaved.Array.data[1].offsetX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSaved.Array.data[1].offsetY
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSaved.Array.data[1].advance
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSaved.Array.data[1].channel
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSaved.Array.data[2].index
+      value: 49
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSaved.Array.data[2].y
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSaved.Array.data[2].width
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSaved.Array.data[2].height
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSaved.Array.data[2].offsetX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSaved.Array.data[2].offsetY
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSaved.Array.data[2].advance
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSaved.Array.data[2].channel
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSaved.Array.data[3].index
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSaved.Array.data[3].x
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSaved.Array.data[3].y
+      value: 43
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSaved.Array.data[3].width
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSaved.Array.data[3].height
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSaved.Array.data[3].offsetX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSaved.Array.data[3].offsetY
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSaved.Array.data[3].advance
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSaved.Array.data[3].channel
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSaved.Array.data[4].index
+      value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSaved.Array.data[4].x
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSaved.Array.data[4].y
+      value: 43
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSaved.Array.data[4].width
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSaved.Array.data[4].height
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSaved.Array.data[4].offsetX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSaved.Array.data[4].offsetY
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSaved.Array.data[4].advance
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFont.mSaved.Array.data[4].channel
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSymbols.Array.data[12].sequence
+      value: '*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSymbols.Array.data[12].spriteName
+      value: Coin_x
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSymbols.Array.data[13].sequence
+      value: '*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSymbols.Array.data[13].spriteName
+      value: Coin_x
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSymbols.Array.data[11].sequence
+      value: '@Ten'
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSymbols.Array.data[11].spriteName
+      value: '@Ten'
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 151094}
+  m_IsPrefabParent: 1

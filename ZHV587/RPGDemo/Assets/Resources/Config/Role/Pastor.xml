@@ -1,0 +1,143 @@
+<Character >
+
+  <NavAgent Height="3" Radius="0.4" Speed="8.0" Acceleration="70" AutoBraking="false" AngularSpeed="720" AvoidancePriority="1" ObstacleAvoidanceType="NoObstacleAvoidance"/>
+
+  <Motions>
+    <Motion Type = "RMT_Idle" Clip="idle" Speed="1" WrapMode="Loop" Life="WhenAnimationEnd" >
+    </Motion>
+    <Motion Type = "RMT_Walk" Clip="run" Speed="1" WrapMode="Loop" Life="WhenAnimationEnd" >
+    </Motion>
+    <Motion Type = "RMT_Attack_1" Clip="attack_1" Speed="1" WrapMode="Clamp" Life="WhenAnimationEnd" >
+    </Motion>
+    <Motion Type = "RMT_Skill_1" Clip="skill_1" Speed="1" WrapMode="Clamp" Life="WhenAnimationEnd" >
+      <MotionPlugin Type="EffectPlugin" name="default" BeginTime="0.1" EndTime="1.4" RootPath="EffectRoots/Skill_1"></MotionPlugin>
+    </Motion>
+  </Motions>
+
+  <AnimationCrossfader>
+    <Tree Clip="idle" Replay="false">
+      <Node Clip="idle" Value="0.2" />
+      <Node Clip="die" Value="0.2" />
+      <Node Clip="run" Value="0.2"  />
+      <Node Clip="attack_1" Value="0.2" />
+      <Node Clip="skill_1" Value="0.2" />
+      <Node Clip="skill_2" Value="0.2" />
+      <Node Clip="skill_3" Value="0.2" />
+    </Tree>
+    <Tree Clip="die">
+      <Node Clip="idle" Value="0.2" />
+      <Node Clip="die" Value="0.2" />
+      <Node Clip="run" Value="0.2"  />
+      <Node Clip="attack_1" Value="0.2" />
+      <Node Clip="skill_1" Value="0.2" />
+      <Node Clip="skill_2" Value="0.2" />
+      <Node Clip="skill_3" Value="0.2" />
+    </Tree>
+    <Tree Clip="run" Replay="false">
+      <Node Clip="idle" Value="0.2" />
+      <Node Clip="die" Value="0.2" />
+      <Node Clip="run" Value="0.2"  />
+      <Node Clip="attack_1" Value="0.2" />
+      <Node Clip="skill_1" Value="0.2" />
+      <Node Clip="skill_2" Value="0.2" />
+      <Node Clip="skill_3" Value="0.2" />
+    </Tree>
+    <Tree Clip="attack_1" >
+      <Node Clip="idle" Value="0.2" />
+      <Node Clip="die" Value="0.2" />
+      <Node Clip="run" Value="0.2"  />
+      <Node Clip="attack_1" Value="0.2" />
+      <Node Clip="skill_1" Value="0.2" />
+      <Node Clip="skill_2" Value="0.2" />
+      <Node Clip="skill_3" Value="0.2" />
+    </Tree>
+    <Tree Clip="skill_1" >
+      <Node Clip="idle" Value="0.2" />
+      <Node Clip="die" Value="0.2" />
+      <Node Clip="run" Value="0.2"  />
+      <Node Clip="attack_1" Value="0.2" />
+      <Node Clip="skill_1" Value="0.2" />
+      <Node Clip="skill_2" Value="0.2" />
+      <Node Clip="skill_3" Value="0.2" />
+    </Tree>
+    <Tree Clip="skill_2">
+      <Node Clip="idle" Value="0.2" />
+      <Node Clip="die" Value="0.2" />
+      <Node Clip="run" Value="0.2"  />
+      <Node Clip="attack_1" Value="0.2" />
+      <Node Clip="skill_1" Value="0.2" />
+      <Node Clip="skill_2" Value="0.2" />
+      <Node Clip="skill_3" Value="0.2" />
+    </Tree>
+    <Tree Clip="skill_3" >
+      <Node Clip="idle" Value="0.2" />
+      <Node Clip="die" Value="0.2" />
+      <Node Clip="run" Value="0.2"  />
+      <Node Clip="attack_1" Value="0.2" />
+      <Node Clip="skill_1" Value="0.2" />
+      <Node Clip="skill_2" Value="0.2" />
+      <Node Clip="skill_3" Value="0.2" />
+    </Tree>
+  </AnimationCrossfader>
+
+  <Commander>
+
+    <Command Type="CC_Idle" SequentialMotions="RMT_Idle"  AutoAim="false">
+      <Changeable Type="CC_Idle" EnableCache="true" CacheL="0.3" CacheR="1"/>
+      <Changeable Type="CC_Walk"/>
+      <Changeable Type="CC_Skill_1"/>
+    </Command>
+
+    <Command Type="CC_Walk" SequentialMotions="RMT_Walk" NextCommand="CC_Walk">
+      <Changeable Type="CC_Walk"/>
+      <Changeable Type="CC_Idle"/>
+      <Changeable Type="CC_Skill_1"/>
+    </Command>
+
+    <Command Type="CC_Skill_1" SequentialMotions="RMT_PreSkill_1,RMT_Skill_1,RMT_PostSkill_l" AutoAim="true" AutoNext="CC_Attack_1">
+      <Changeable Type="CC_Attack_1"/>
+      <Changeable Type="CC_Skill_1" EnableCache="true" CacheL="0.5" CacheR="1.2"/>
+      <Changeable Type="CC_Idle" EnableCache="true" CacheL="0.3" CacheR="1"/>
+    </Command>
+
+    <Command Type="CC_Attack_1" SequentialMotions="RMT_PreAttack_1,RMT_Attack_1,RMT_PostAttack_l" AutoAim="true" >
+      <Changeable Type="CC_Idle"/>
+    </Command>
+
+  </Commander>
+
+  <SkillController>
+    <Skill TriggerCommand="CC_Skill_1" ID="10086" PlayMode="StopCurrent" StopMode="OnCommandEnd">
+      <Plugin Name="SkillEffectPlugin" BeginTime="0" EndTime="1" RootPath=""  Position="(0,0.2,2)" EffectPath="Effect/SkillEffect/shayu_skill1_1/shayu_skill1_1"  PlayMode="StopLastTask" ></Plugin>
+      <Plugin Name="SkillAttackPlugin" BeginTime="0" EndTime="1"  Radius="3" Angles="180" HitInterval="0.2" HitCount="5"></Plugin>
+    </Skill>
+  </SkillController>
+
+  <Flayers>
+    <Flayer></Flayer>
+  </Flayers>
+
+  <AIMachine>
+
+    <States>
+      <State Name="AS_Idle" />
+      <State Name="AS_SearchEnemy"/>
+      <State Name="AS_Track" StopRadius="0" />
+      <State Name="AS_Skill_1" ForceStop="true"/>
+    </States>
+
+    <Triggers>
+      <Trigger ExecuteState="AS_SearchEnemy">
+        <Condition Name="AC_HasNoEnemy" />
+      </Trigger>
+      <Trigger ExecuteState="AS_Track">
+        <Condition Name="AC_Distance" Min="2" Max="20" />
+      </Trigger>
+      <Trigger ExecuteState="AS_Skill_1" Random="30">
+        <Condition Name="AC_Distance" Min="0" Max="2" />
+      </Trigger>
+    </Triggers>
+
+  </AIMachine>
+
+</Character>
