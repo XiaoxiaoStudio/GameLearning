@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: jian_zhezhao
+  m_Shader: {fileID: 4800000, guid: f269a077b89fbef47a4b88b0f2e15bd2, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _T01
+      second:
+        m_Texture: {fileID: 2800000, guid: b4eeee664d6d96a4a96016dfb0d13301, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _mask
+      second:
+        m_Texture: {fileID: 2800000, guid: 40ad6799b5675244ebc13d03964f8ed5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _niuqu
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: _niuqu_sudu
+      second: 1
+    - first:
+        name: _niuqudu
+      second: 0
+    m_Colors:
+    - first:
+        name: _Color_T01
+      second: {r: 0.74264705, g: 0.872211, b: 1, a: 1}

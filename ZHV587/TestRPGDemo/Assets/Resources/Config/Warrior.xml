@@ -1,0 +1,120 @@
+<Character>
+  <Motions>
+    <Motion Type = "RMT_Idle" Clip="idle" Speed="1" WrapMode="Loop" Break="true" ExitTime="0.9" NextType="RMT_Idle">
+      <Changeable Type="RMT_Walk" parameters="33" />
+      <Changeable Type="RMT_Run" parameters="36" />
+      <Changeable Type="RMT_Attack_1" parameters="61" />
+      <Changeable Type="RMT_Attack_2" parameters="64" />
+      <Changeable Type="RMT_Attack_3" parameters="67" />
+      <Changeable Type="RMT_Attack_4" parameters="70" />
+      <Changeable Type="RMT_Skill_1" parameters="142" />
+      <Changeable Type="RMT_Skill_2" parameters="145" />
+      <Changeable Type="RMT_Skill_3" parameters="148" />
+      <Changeable Type="RMT_BeAttack_1" parameters="151" />
+      <Changeable Type="RMT_KnockDown" parameters="107" />
+      <Changeable Type="RMT_KnockDownStand" parameters="110" />
+      <Changeable Type="RMT_Die_1" parameters="27" />
+    </Motion>
+    <Motion Type = "RMT_Walk" Clip="run" Speed="1" WrapMode="Loop" Break="true" ExitTime="0.9" NextType="RMT_Walk">
+      <Changeable Type="RMT_Idle" parameters="0" />
+      <Changeable Type="RMT_Run" parameters="36" />
+      <Changeable Type="RMT_Attack_1" parameters="61" />
+      <Changeable Type="RMT_Attack_2" parameters="64" />
+      <Changeable Type="RMT_Attack_3" parameters="67" />
+      <Changeable Type="RMT_Attack_4" parameters="70" />
+      <Changeable Type="RMT_Die_1" parameters="27" />
+    </Motion>
+    <Motion Type = "RMT_Run" Clip="run_fast" Speed="1" WrapMode="Loop" Break="true" ExitTime="0.9" NextType="RMT_Run">
+      <Changeable Type="RMT_Idle" parameters="0" />
+      <Changeable Type="RMT_Walk" parameters="33" />
+      <Changeable Type="RMT_Die_1" parameters="27" />
+    </Motion>
+    <Motion Type = "RMT_Attack_1" Clip="attack_1" Speed="1" WrapMode="Clamp" Break="true" ExitTime="0.9" NextType="RMT_Idle">
+      <Changeable Type="RMT_Idle" parameters="0" />
+      <Changeable Type="RMT_Walk" parameters="33" />
+      <Changeable Type="RMT_Run" parameters="36" />
+      <Changeable Type="RMT_Attack_2" parameters="64" />
+      <Changeable Type="RMT_Skill_1" parameters="142" />
+      <Changeable Type="RMT_Skill_2" parameters="145" />
+      <Changeable Type="RMT_Skill_3" parameters="148" />
+      <Changeable Type="RMT_BeAttack_1" parameters="151" />
+      <Changeable Type="RMT_KnockDown" parameters="107" />
+      <Changeable Type="RMT_KnockDownStand" parameters="110" />
+      <Changeable Type="RMT_Die_1" parameters="27" />
+    </Motion>
+    <Motion Type = "RMT_Attack_2" Clip="attack_2" Speed="1" WrapMode="Clamp" Break="true" ExitTime="0.9" NextType="RMT_Idle">
+      <Changeable Type="RMT_Idle" parameters="0" />
+      <Changeable Type="RMT_Attack_3" parameters="67" />
+      <Changeable Type="RMT_Skill_1" parameters="142" />
+      <Changeable Type="RMT_Skill_2" parameters="145" />
+      <Changeable Type="RMT_Skill_3" parameters="148" />
+      <Changeable Type="RMT_BeAttack_1" parameters="151" />
+      <Changeable Type="RMT_KnockDown" parameters="107" />
+      <Changeable Type="RMT_KnockDownStand" parameters="110" />
+      <Changeable Type="RMT_Die_1" parameters="27" />
+    </Motion>
+    <Motion Type = "RMT_Attack_3" Clip="attack_3" Speed="1" WrapMode="Clamp" Break="true" ExitTime="0.9" NextType="RMT_Idle">
+      <Changeable Type="RMT_Idle" parameters="0" />
+      <Changeable Type="RMT_Attack_4" parameters="70" />
+      <Changeable Type="RMT_Skill_1" parameters="142" />
+      <Changeable Type="RMT_Skill_2" parameters="145" />
+      <Changeable Type="RMT_Skill_3" parameters="148" />
+      <Changeable Type="RMT_BeAttack_1" parameters="151" />
+      <Changeable Type="RMT_KnockDown" parameters="107" />
+      <Changeable Type="RMT_KnockDownStand" parameters="110" />
+      <Changeable Type="RMT_Die_1" parameters="27" />
+    </Motion>
+    <Motion Type = "RMT_Attack_4" Clip="attack_4" Speed="1" WrapMode="Clamp" Break="true" ExitTime="0.9" NextType="RMT_Idle">
+      <Changeable Type="RMT_Idle" parameters="0" />
+      <Changeable Type="RMT_Attack_1" parameters="61" />
+      <Changeable Type="RMT_Skill_1" parameters="142" />
+      <Changeable Type="RMT_Skill_2" parameters="145" />
+      <Changeable Type="RMT_Skill_3" parameters="148" />
+      <Changeable Type="RMT_BeAttack_1" parameters="151" />
+      <Changeable Type="RMT_KnockDown" parameters="107" />
+      <Changeable Type="RMT_KnockDownStand" parameters="110" />
+      <Changeable Type="RMT_Die_1" parameters="27" />
+    </Motion>
+    <Motion Type = "RMT_Skill_1" Clip="skill_1" Speed="1" WrapMode="Clamp" Break="true" ExitTime="0.9" NextType="RMT_Idle">
+      <Changeable Type="RMT_Idle" parameters="0" />
+      <Changeable Type="RMT_Skill_2" parameters="145" />
+      <Changeable Type="RMT_Skill_3" parameters="148" />
+      <Changeable Type="RMT_BeAttack_1" parameters="151" />
+      <Changeable Type="RMT_Die_1" parameters="27" />
+    </Motion>
+    <Motion Type = "RMT_Skill_2" Clip="skill_2" Speed="1" WrapMode="Clamp" Break="true" ExitTime="0.9" NextType="RMT_Idle">
+      <Changeable Type="RMT_Idle" parameters="0" />
+      <Changeable Type="RMT_Skill_1" parameters="142" />
+      <Changeable Type="RMT_Skill_3" parameters="148" />
+      <Changeable Type="RMT_BeAttack_1" parameters="151" />
+      <Changeable Type="RMT_Die_1" parameters="27" />
+    </Motion>
+    <Motion Type = "RMT_Skill_3" Clip="skill_3" Speed="1" WrapMode="Clamp" Break="true" ExitTime="0.9" NextType="RMT_Idle">
+      <Changeable Type="RMT_Idle" parameters="0" />
+      <Changeable Type="RMT_Skill_1" parameters="142" />
+      <Changeable Type="RMT_Skill_2" parameters="145" />
+      <Changeable Type="RMT_BeAttack_1" parameters="148" />
+      <Changeable Type="RMT_Die_1" parameters="27" />
+    </Motion>
+    <Motion Type = "RMT_BeAttack_1" Clip="beat_back1" Speed="1" WrapMode="Clamp" Break="false" ExitTime="0.9" NextType="RMT_Idle">
+      <Changeable Type="RMT_Idle" parameters="0" />
+      <Changeable Type="RMT_Die_1" parameters="27" />
+    </Motion>
+    <Motion Type = "RMT_KnockDown" Clip="knock_down1" Speed="1" WrapMode="Clamp" Break="false" ExitTime="0.9" NextType="RMT_Idle">
+      <Changeable Type="RMT_Idle" parameters="0" />
+      <Changeable Type="RMT_Die_1" parameters="27" />
+    </Motion>
+    <Motion Type = "RMT_Die_1" Clip="die" Speed="1" WrapMode="Clamp" Break="false" ExitTime="0.9" NextType="RMT_Idle">
+      <Changeable Type="RMT_Die_1" parameters="27" />
+    </Motion>
+  </Motions>
+
+  <SkillController>
+    <Skill Type="RMT_Attack_1">
+      <Plugin Name="SkillEffectPlugin" BeginTime="0" EndTime="1" RootPath=""  Position="(0,0,0)" Scale="(0.9,0.9,0.9)" EffectPath="Effect/SkillEffect/warrior_attack1/" EffectName="warrior_attack1" />
+    </Skill>
+    <Skill Type="RMT_Skill_1">
+      <Plugin Name="SkillEffectPlugin" BeginTime="0" EndTime="1" RootPath="" EffectPath="Effect/SkillEffect/warrior_skill1_1/" EffectName="warrior_skill1_1" PlayMode="StopLastTask" />
+    </Skill>
+  </SkillController>
+</Character>

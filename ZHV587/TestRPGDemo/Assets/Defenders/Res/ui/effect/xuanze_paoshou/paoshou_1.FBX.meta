@@ -1,0 +1,152 @@
+fileFormatVersion: 2
+guid: 945cd81b9906f0345ace16ef294f6788
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bone001
+    100002: Bone002
+    100004: Bone003
+    100006: Bone004
+    100008: Bone005
+    100010: Bone006
+    100012: Bone007
+    100014: Bone008
+    100016: Bone009
+    100018: Bone010
+    100020: Bone011
+    100022: Bone012
+    100024: //RootNode
+    100026: Plane018
+    100028: Plane019
+    100030: Plane020
+    100032: Plane021
+    100034: Plane022
+    100036: Plane023
+    100038: Plane024
+    100040: Plane025
+    100042: Plane026
+    100044: Plane027
+    100046: Plane028
+    100048: Plane029
+    400000: Bone001
+    400002: Bone002
+    400004: Bone003
+    400006: Bone004
+    400008: Bone005
+    400010: Bone006
+    400012: Bone007
+    400014: Bone008
+    400016: Bone009
+    400018: Bone010
+    400020: Bone011
+    400022: Bone012
+    400024: //RootNode
+    400026: Plane018
+    400028: Plane019
+    400030: Plane020
+    400032: Plane021
+    400034: Plane022
+    400036: Plane023
+    400038: Plane024
+    400040: Plane025
+    400042: Plane026
+    400044: Plane027
+    400046: Plane028
+    400048: Plane029
+    4300000: Plane018
+    4300002: Plane019
+    4300004: Plane020
+    4300006: Plane021
+    4300008: Plane022
+    4300010: Plane023
+    4300012: Plane024
+    4300014: Plane025
+    4300016: Plane026
+    4300018: Plane027
+    4300020: Plane028
+    4300022: Plane029
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Plane018
+    13700002: Plane019
+    13700004: Plane020
+    13700006: Plane021
+    13700008: Plane022
+    13700010: Plane023
+    13700012: Plane024
+    13700014: Plane025
+    13700016: Plane026
+    13700018: Plane027
+    13700020: Plane028
+    13700022: Plane029
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 2
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 2
+    addColliders: 0
+    importBlendShapes: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 2
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
